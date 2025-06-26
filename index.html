@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bekreftelse av gavekort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body, html {
       margin: 0;
@@ -34,21 +35,23 @@
     }
 
     .content {
-      max-width: 600px;
+      max-width: 700px;
+      padding: 1em;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: clamp(2.5rem, 5vw, 4rem); /* scales with screen size */
       margin-bottom: 0.5em;
     }
 
     p {
-      font-size: 1.1em;
-      margin: 0.8em 0;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin: 1em 0;
+      line-height: 1.5;
     }
 
     .footer {
-      font-size: 0.85em;
+      font-size: clamp(1rem, 2vw, 1.3rem);
       margin-top: 2em;
       color: #ccc;
     }
@@ -69,7 +72,3 @@
       <p>Gyldig til: <strong>31. desember 2025</strong></p>
       <p>Kontakt oss for å avtale hoppetid:<br><em>info@skyfall-jump.com</em></p>
       <div class="footer">Skyfall Fallskjermsenter · Org.nr. 834 998 231</div>
-    </div>
-  </div>
-</body>
-</html>
